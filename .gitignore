@@ -1,0 +1,7 @@
+
+database/student_data.db
+
+__pycache__/
+*.pyc
+
+*.log
