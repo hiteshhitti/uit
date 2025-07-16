@@ -29,6 +29,14 @@ def create_tables():
     )
     """)
 
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS holidays (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        date TEXT UNIQUE,
+        reason TEXT
+    )
+    """)
+
     # Fee Exceptions
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS fee_exceptions (
